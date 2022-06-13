@@ -13,7 +13,7 @@ public class SaSsoClientApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SaSsoClientApplication.class, args);
-		System.out.println("\nSa-Token SSO模式一 Client端启动成功");
+		System.out.println("Sa-Token SSO模式一 Client端启动成功");
 	}
 	
 }
