@@ -29,7 +29,6 @@ public class CorsFilter implements Filter {
 			throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
-		
 		// 允许指定域访问跨域资源
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		// 允许所有请求方式
@@ -45,7 +44,6 @@ public class CorsFilter implements Filter {
 			response.getWriter().print("");
 			return;
 		}
-
 		// System.out.println("*********************************过滤器被使用**************************");
 		chain.doFilter(req, res);
 	}
@@ -57,5 +55,4 @@ public class CorsFilter implements Filter {
 	@Override
 	public void destroy() {
 	}
-
 }
