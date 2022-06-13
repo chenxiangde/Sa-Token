@@ -8,7 +8,6 @@ public class SaSso3ClientApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SaSso3ClientApplication.class, args);
-		System.out.println("\nSa-Token SSO模式三 Client端启动成功");
+		System.out.println("Sa-Token SSO模式三 Client端启动成功");
 	}
-	
 }

@@ -10,5 +10,4 @@ public class SaSso2ClientApplication {
 		SpringApplication.run(SaSso2ClientApplication.class, args);
 		System.out.println("Sa-Token SSO模式二 Client端启动成功");
 	}
-	
 }
