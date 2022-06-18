@@ -14,16 +14,16 @@ import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
 
 /**
- * Sa-OAuth2 Client端 控制器 
+ * Sa-OAuth2 Client端控制器
  * @author kong 
  */
 @RestController
 public class SaOAuthClientController {
 
-	// 相关参数配置 
-	private String clientId = "1001";								// 应用id 
-	private String clientSecret = "aaaa-bbbb-cccc-dddd-eeee";		// 应用秘钥 
-	private String serverUrl = "http://sa-oauth-server.com:8001";	// 服务端接口 
+	// 相关参数配置
+	private String clientId = "1001";								// 应用id
+	private String clientSecret = "aaaa-bbbb-cccc-dddd-eeee";		// 应用秘钥
+	private String serverUrl = "http://sa-oauth-server.com:8001";	// 服务端接口
 	
 	// 进入首页 
 	@RequestMapping("/")
@@ -177,12 +177,10 @@ public class SaOAuthClientController {
 		return SaResult.error(e.getMessage());
 	}
 
-	
-	// ------------ 模拟方法 ------------------ 
+	// ------------ 模拟方法 ------------------
 	// 模拟方法：根据openid获取userId 
 	private long getUserIdByOpenid(String openid) {
 		// 此方法仅做模拟，实际开发要根据具体业务逻辑来获取userId
 		return 10001;
 	}
-	
 }
